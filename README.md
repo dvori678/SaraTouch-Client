@@ -2,18 +2,22 @@
 
 הלקוח של מערכת התורים SaraTouch. הוא מדגים את השרת (`SaraTouch-Server`) מקצה לקצה.
 
+## דרישות
+
+- Node.js 20.19 ומעלה
+- השרת: https://github.com/dvori678/SaraTouch-Server (הוראות ההרצה שלו ב-README שם)
+
 ## הרצה
 
-1. מריצים את השרת ב-Visual Studio (`https://localhost:7127`).
+1. מריצים את השרת בפרופיל `https` (`https://localhost:7127`).
 2. בתיקייה הזו:
-   ```
+```
    npm install
    npm run dev
-   ```
+```
 3. פותחים את `http://localhost:5173`.
 
-ה-Vite מעביר כל בקשה ל-`/api` אל השרת (proxy ב-`vite.config.js`), ולכן אין צורך ב-CORS. אם הפורט של השרת שונה, משנים את `API_TARGET` באותו קובץ.
-
+Vite מעביר כל בקשה ל-`/api` אל השרת (proxy ב-`vite.config.js`), ולכן אין צורך ב-CORS. אם הפורט של השרת שונה, משנים את `API_TARGET` באותו קובץ.
 ## מסכים
 
 | מסך | מה מדגים |
