@@ -36,7 +36,7 @@ export default function LoginPage() {
           fullName: form.fullName,
           email: form.email,
           password: form.password,
-          phone: form.phone || undefined,
+          phone: form.phone,
         })
       }
       navigate('/')
@@ -72,8 +72,8 @@ export default function LoginPage() {
               <input id="fullName" className="input" value={form.fullName} onChange={update('fullName')} required />
             </div>
             <div>
-              <label className="label" htmlFor="phone">טלפון (לא חובה)</label>
-              <input id="phone" className="input" dir="ltr" value={form.phone} onChange={update('phone')} />
+              <label className="label" htmlFor="phone">טלפון</label>
+              <input id="phone" className="input" dir="ltr" value={form.phone} onChange={update('phone')} required/>
             </div>
           </>
         )}
